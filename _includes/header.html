@@ -1,0 +1,23 @@
+<div id="navbar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+    
+</div>
+
+<span id="navButton" onclick="openNav()">&#9776;</span>
+
+
+<script>
+    function openNav(){
+        document.getElementById("navbar").style.width = "250px";
+        document.body.style.marginLeft = "250px";
+        document.getElementById("navButton").style.opacity = 0;
+    }
+    function closeNav(){
+        document.getElementById("navbar").style.width = "0px";
+        document.body.style.marginLeft = "0";
+        document.getElementById("navButton").style.opacity = 100;
+    }
+</script>
