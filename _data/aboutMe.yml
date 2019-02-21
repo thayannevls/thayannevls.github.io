@@ -1,0 +1,25 @@
+- title: <i class="fas fa-university fa-2x"></i> Education
+  body: '
+  <ul>
+    <li> Undergraduate student in Computer Science at Federal University of Campina Grande. <b>2017-2023</b></li>
+    <li>High School integraded with Computer Technician Course at Federal Institute of Education, Science and Technology of Paraiba - Campina Grande. <b>2014 - 2017</b></li>
+  </ul>
+  '
+
+- title: <i class="fas fa-briefcase fa-2x"></i> Work
+  body: '
+  <ul>
+    <li>Full stack developer at Analytics Laboratorio, <b>2018-Present</b>.</li>
+    <li>Project to implement a refectory access system using face recognition, LADOSS laboratory, <b>2016-2017</b>.</li>
+    <li>PIBIC-EM Project to combat Piracy Products using Asymmetric Cryptography and QRCode, <b>2015-2016</b>.</li>
+  </ul>
+  '
+
+- title: <i class="fas fa-medal fa-2x"></i> Awards
+  body: '
+  <ul>
+    <li>4º place at Hackfest Brazil with project Brasirama, <b>2018</b>.</li>
+    <li>Silver Medal at 11ª Olimpíada Paraibana de Informática, <b>2018</b>.</li>
+    <li>Bronze Medal at 8ª Olimpíada Paraibana de Informática, <b>2015</b>.</li>
+  </ul>
+  '

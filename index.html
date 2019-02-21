@@ -23,44 +23,39 @@ title: Home
     <div class="content">
        <div class="introduction">
             <img src="/assets/images/me.png" alt="Me">
-           <p>Everything started with my brother teaching me how to code using Python, then I did a Computer Technician course integraded with High School at IFPB, and now I'm a Computer Science Student at UFCG - Campina Grande, Brazil. 
-         Currently I'm working as a Full Stack Developer at Analytics Laboratory and I'm a co-founder of the OpenDevUFCG Organization. </p>
+            <p>Everything started when my brother decided to teach me how to program using python, after this I'm in
+                this journey on learning and building new things. Today I'm a student of Computer Science in Brazil but besides
+                the classes and college projects that I have, I'm passionate about Open Source and communities which
+                focus on helping and sharing, that's why I created with friends the OpenDevUFCG organization and together
+                we try to impulse and help Open Source projects in our college. Oh, beyonde all the computer things,
+                in my free time I love to listen music, watch movies and play with my 5 dogs.
+            </p>
         </div>
         <hr/>
-        <div class="row">
-            <div class=" column experience">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Vue.js</li>
-                    <li>R</li>
-                    <li>React</li>
-                    <li>Haskell</li>
-                    <li>HTML/CSS</li>
-                    <li>Flask</li>
-                </ul>
+        <h1>My past and my present</h1>
+        <div class="experience">
+            {% for item in site.data.aboutMe %}
+            <div class="panel">
+                <div class="panel-heading" data-toggle="{{forloop.index}}"> 	
+                    <a href="javascript:void(0)" data-toggle="{{forloop.index}}" href="#">{{item.title}}</a>
+                </div>
+                <div class="panel-body hidden-element" data-body="{{forloop.index}}"> 
+                    {{item.body}} 
+                </div>
             </div>
-            <div class="column education">
-                <h2>Education</h2>
-                <ul>
-                    <li>Undergraduate student in Computer Science at Federal University of Campina Grande. 2017-2023</li>
-                    <li>High School integraded with Computer Technician Course at Federal Institute of Education, Science and Technology of Paraiba - Campina Grande. 2014 - 2017</li>
-                </ul>
-            </div>
-            <div class="column awards">
-                <h2>Awards</h2>
-                <ul>
-                    <li>4º place at Hackfest Brazil, with project Brasirama.</li>
-                    <li>Silver Medal at 11ª Olimpíada Paraibana de Informática, 2018.</li>
-                    <li>Bronze Medal at 8ª Olimpíada Paraibana de Informática, 2015.</li>
-                </ul>
-            </div>
-        </div>
+            {% endfor %}
+        </div>  
+
     </div>
 </section>
 
 <!-- <header class="sectionHeader">
     <h1 class="sectionHeader__title">My Projects</h1>
     <p class="sectionHeader__description">What i've done and what i'm doing.</p>
-</header> -->
+</header>
+
+<section class="projects">
+    <div class="content">
+
+    </div>
+</section> -->

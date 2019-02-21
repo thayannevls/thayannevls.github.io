@@ -100,41 +100,84 @@ section {
     h2 {
         color: #FAD02C
     }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .column {
-        float: left;
-    }
-
-    .awards {
-        width: 25%
-    }
-
-    .education {
-        width: 50%
-    }
 
     .experience {
-        width: 25%
+        margin-top: 50px;
     }
+    .panel {
+        margin-top: 10px;
+        margin-bottom:4px;
+    }
+
+    .panel-heading {
+        padding:10px;
+        display: inline-block;
+        width: 100%;
+        background-color: #FAD02C;
+        background-image: linear-gradient(315deg, #fbb034 0%, #FAD02C 74%);
+        border: 1px solid #FAD02C;
+        position: relative;
+        cursor: pointer;
+    }
+    .panel-heading a {
+        text-decoration: none;
+        color:#373B44;
+        vertical-align: bottom;
+        font-weight: absolute;
+        font-size: 20px;
+    }
+    .panel-heading a:after {
+        content: "+";
+        position: absolute;
+        right: 15px;
+        font-size: 14px;
+        font-weight: 300;
+        top: 50%;
+        line-height: 1;
+        margin-top: -7px;
+    }
+    
+    .panel-heading:hover, .panel-heading-hover {
+        background-color: #fbb034;
+        border: 1px solid #fbb034;
+        background-image: none;
+    }
+    .panel-heading-hover a:after {
+        content: "-";
+        position: absolute;
+        right: 15px;
+        font-size: 14px;
+        font-weight: 300;
+        top: 50%;
+        line-height: 1;
+        margin-top: -7px;
+    }
+    .panel-heading-question{
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+    .panel-body{
+        border: 1px solid #FAD02C;
+        border-top: 0;
+        background:#FAD02C;
+        padding: 0 10px;
+        width: 100%;
+        color: #373B44;
+    }
+    
+    .hidden-element {
+        -moz-transition: height .3s;
+        -ms-transition: height .3s;
+        -o-transition: height .3s;
+        -webkit-transition: height .3s;
+        transition: height .3s;
+        height: 0;
+        overflow: hidden;
+    }
+    .highlight {overflow: auto; background-color: #efefef;}
 }
 
 .projects {
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        width: 300px;
-      }
-      
-      .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      }
-      
-      .container {
-        padding: 2px 16px;
-      }
+    height: 80vh;
+    
 }
