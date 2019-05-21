@@ -179,5 +179,18 @@ section {
 
 .projects {
     height: 80vh;
-    
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 20px 70px;
+    }
+    .card {
+        display: grid;
+        max-width: 300px;
+        text-align: center;
+
+        .card-title {
+            font-size: 20px;
+        }
+    }
 }
