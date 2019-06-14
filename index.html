@@ -1,60 +1,49 @@
----
-layout: default
-title: Home
----
-<section class="intro">
-    <div class="content">
-        <h1 class="myName">Thayanne Sousa</h1>
-        <h3 class="presentation">I'm a computer science student and <span style="color:#FAD02C;">full stack developer</span>.</h3>
-        <div class="contact">
-            <a href="https://twitter.com/thayannevls"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="https://github.com/thayannevls"><i class="fab fa-github fa-2x"></i></a>
-            <a href="mailto:thayannevls@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/thayannevls/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thayanne Sousa</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js"
+    integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js"
+    integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js"
+    integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="name">Hello, I'm <span style="background-color: #ffd700;">Thayanne</span>!</h1>
+        <h2>Computer Science student, passionate about Open Source and learning about front development.</h2>
+        <div class="social-links">
+            <a href="https://github.com/thayannevls">
+              <i class="fab fa-github" title="GitHub"></i>
+            </a>
+            <a href="https://twitter.com/thayannevls">
+              <i class="fab fa-twitter" title="Twitter"></i>
+            </a>
+            <a href="https://dev.to/thayannevls">
+              <i class="fab fa-dev" title="DEV"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/thayannevls/">
+                <i class="fab fa-linkedin" title="Linkedin"></i>
+            </a>
         </div>
+      </header>
     </div>
-</section>
-
-<header class="sectionHeader">
-    <h1 class="sectionHeader__title"> About me</h1>
-    <p class="sectionHeader__description">Always learning and building new things.</p>
-</header>
-<section class="aboutMe">
-    <div class="content">
-       <div class="introduction">
-            <img src="/assets/images/me.png" alt="Me">
-            <p>Everything started when my brother decided to teach me how to program using python, after this I'm in
-                this journey on learning and building new things. Today I'm a student of Computer Science in Brazil but besides
-                the classes and college projects that I have, I'm passionate about Open Source and communities which
-                focus on helping and sharing, that's why I created with friends the OpenDevUFCG organization and together
-                we try to impulse and help Open Source projects in our college. Oh, beyonde all the computer things,
-                in my free time I love to listen music, watch movies and play with my 5 dogs.
-            </p>
-        </div>
-        <hr/>
-        <h1>My past and my present</h1>
-        <div class="experience">
-            {% for item in site.data.aboutMe %}
-            <div class="panel">
-                <div class="panel-heading" data-toggle="{{forloop.index}}"> 	
-                    <a href="javascript:void(0)" data-toggle="{{forloop.index}}" href="#">{{item.title}}</a>
-                </div>
-                <div class="panel-body hidden-element" data-body="{{forloop.index}}"> 
-                    {{item.body}} 
-                </div>
-            </div>
-            {% endfor %}
-        </div>  
-
-    </div>
-</section>
-<header class="sectionHeader">
-    <h1 class="sectionHeader__title">My Projects</h1>
-    <p class="sectionHeader__description">What i've done and what i'm doing.</p>
-</header>
-
-<section class="projects">
-    <div class="content">
-        
-    </div>
-</section>
+    <script src="script.js"></script>
+  </body>
+</html>

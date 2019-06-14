@@ -1,12 +1,6 @@
 
-# Created by https://www.gitignore.io/api/macos,jekyll
-# Edit at https://www.gitignore.io/?templates=macos,jekyll
-
-### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Created by https://www.gitignore.io/api/macos
+# Edit at https://www.gitignore.io/?templates=macos
 
 ### macOS ###
 # General
@@ -36,4 +30,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# End of https://www.gitignore.io/api/macos,jekyll
+# End of https://www.gitignore.io/api/macos

@@ -1,1 +1,0 @@
-# thayannevls.github.io
